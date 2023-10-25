@@ -1,0 +1,154 @@
+/* Reset some default styles */
+body, h1, p, ul, li, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header navigation */
+header {
+    background-color: #35424a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the messaging container */
+#messaging-container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10vh;
+}
+
+#messaging-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#chat-box {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+#message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message {
+    width: 70%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#message:focus {
+    outline: none;
+}
+
+button {
+    background-color: #35424a;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #243036;
+}
+
+/* Style chat messages */
+.message {
+    background-color: #EDEDED;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message p:first-child {
+    font-weight: bold;
+}
+/* Existing styles... */
+
+/* Style chat messages */
+.message {
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message p {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.message p:first-child {
+    font-weight: bold;
+    color: #35424a;
+}
+
+.message p:nth-child(2) {
+    color: #333;
+}
+
+/* Adjust the chat box scrollbar */
+#chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
